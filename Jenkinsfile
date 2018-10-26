@@ -18,8 +18,8 @@ pipeline {
                 }
            }
 post {
-    success {
-          message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
+    always {
+          sendNotifications currentBuild.result
     }
 }       
 
