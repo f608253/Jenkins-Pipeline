@@ -5,8 +5,8 @@ assert greeting.toString() == 'Hello Guillaume'
 println greeting.toString()
 
 def title = ‘Groovy String Interpolation’
-def opinion = ‘feature is awesome.’
-def about = “This post is about ${title}.”
+def opinion = ‘feature is awesome’
+def about = “This post is about ${title}”
 def myView = “Hello ${title} + Sweet${opinion}”
 assert about.toString() == ‘This post is about Groovy String Interpolation.’
 assert myView.toString() == ‘Groovy String Interpolation feature is awesome.’
