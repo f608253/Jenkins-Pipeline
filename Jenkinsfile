@@ -18,6 +18,7 @@ pipeline {
                 stage('Deploy') {
                      steps {
                           echo "Deploying stage of code*********************"
+			  sh 'echo "stage" > generatedFile.txt'   
                      }
                 }
            }
