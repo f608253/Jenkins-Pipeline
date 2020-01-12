@@ -6,10 +6,12 @@ pipeline {
           agent any 
           stages {
                 stage('Build') {
+				    timestamps {
                      steps {
                           echo "Building the code stage******kool*****sure*********"
                      }
                  }
+				 }
                 stage('Test') {
                      steps {
                            echo "Testing stage****************************"
