@@ -1,6 +1,10 @@
+def a=12
+def b=24
 /* a standalone multiline comment
    spanning two lines */
 println "hello: this line is from multiline comment script - from git scm repo" /* a multiline comment starting
                    at the end of a statement */
 println 1 /* one */ + 2 /* two */
 println "1 /* one */ + 2 /* two */"
+assert 'ab' == 'a' + 'b'
+println a + b
