@@ -14,15 +14,19 @@ pipeline {
 				 }
                 stage('Test') {
                      steps {
+					 timestamps {
                            echo "Testing stage****************************"
                      }
+					 }
                 }
                 stage('Deploy') {
                      steps {
+					 timestamps {
                           echo "Deploying stage of code*********************"
 			  sh 'echo "stage" > generatedFile.txt'   
                      }
                 }
+				}
            }
 		   
 //          emailext body: 'A Test email for the Job', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test email for Jenkins Engine'
