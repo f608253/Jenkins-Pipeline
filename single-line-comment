@@ -1,2 +1,2 @@
 // a standalone single line comment
-println "hello" // a comment till the end of the line
+println "hello: this line is from the single line comment - from github source" // a comment till the end of the line
