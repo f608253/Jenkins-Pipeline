@@ -3,7 +3,7 @@ node {
 }
 
 pipeline {
-          agent any 
+          agent { label 'cm-linux1325' } 
           stages {
                 stage('Build') {
                      steps {
