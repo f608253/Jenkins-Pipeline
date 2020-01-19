@@ -1,4 +1,4 @@
-import static groovyx.gpars.GParsPool.withPool
+//import static groovyx.gpars.GParsPool.withPool
 
 def urls = [
     'http://www.groovy-lang.org',
