@@ -1,8 +1,15 @@
 import groovy.util.XmlSlurper
+import groovy.io.FileType
+
+def list = []
+
+def dir = new File("path_to_parent_dir")
+dir.eachFileRecurse (FileType.FILES) { file ->
+  list << file
+}
 node {
     checkout scm
 }
-git ls-files
 def customers = new XmlSlurper().parse(new File('customers.xml'))
 for (customer in customers.corporate.customer) {
     println "${customer.@name} works for ${customer.@company}"
