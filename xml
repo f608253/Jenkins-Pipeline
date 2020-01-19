@@ -2,7 +2,7 @@ import groovy.util.XmlSlurper
 node {
     checkout scm
 }
-ls -lrt
+git ls-files
 def customers = new XmlSlurper().parse(new File('customers.xml'))
 for (customer in customers.corporate.customer) {
     println "${customer.@name} works for ${customer.@company}"
