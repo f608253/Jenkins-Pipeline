@@ -2,6 +2,7 @@
 //    checkout scm
 //}
 
+pipeline1
 pipeline {
           agent any 
           stages {
