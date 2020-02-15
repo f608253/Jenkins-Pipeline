@@ -1,6 +1,6 @@
-node {
-    checkout scm
-}
+//node {
+//    checkout scm
+//}
 
 pipeline {
           agent any 
